@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Njust</title>
+        <style>
+            #login{
+                padding:30px;
+                margin-left: 220px;
+            }
+            #header {
+                background-color:purple;
+                color:white;
+                text-align:center;
+                padding:5px;
+            }
+            #nav {
+                line-height:30px;
+                background-color:#eeeeee;
+                color: purple;
+                height:430px;
+                width:200px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                width:1000px;
+                float:left;
+                padding:10px;	 	 
+                margin-left: 25px;
+            }
+            #footer {
+                background-color:purple;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:5px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="img">
+            <img class="site-logo" src="img/logo.png" width="270" height="70">
+        </div>
+
+        <div id="header">
+            <h1>NJUST 南京理工大学</h1>
+        </div>
+
+        <script>
+            var element = document.getElementById('header');
+            var callback = function(){
+                alert('Welcome to NJUST!')
+            };
+            element.addEventListener('click', callback)
+        </script>
+
+        <div id="nav">
+            <li><a href="#home" style="color: purple">经济管理学院<br><br></a></li>
+            <li><a href="http://cs.njust.edu.cn/" style="color: purple">计算机学院<br><br></a></li>
+            <li><a href="http://eoe.njust.edu.cn/" style="color: purple">电子工程与光电技术学院<br><br></a></li>
+            <li><a href="http://sme.njust.edu.cn/" style="color: purple"> 机械工程学院<br><br></a></li>
+            <li><a href="http://nd.njust.edu.cn/" style="color: purple"> 能源与动力工程学院<br><br></a></li>
+            <li><a href="http://au.njust.edu.cn/" style="color: purple"> 自动化学院<br><br></a></li>
+            <li><a href="http://lxy.njust.edu.cn/" style="color: purple"> 理学院<br><br></a></li>
+        </div>
+        <div id="login">
+            <form>
+                学号:<br>
+                <input type="text" name="firstname">
+                <br>
+                密码:<br>
+                <input type="password" name="lastname">
+            </form>
+            <br>
+            <button>登陆</button>
+        </div>
+        <div id="section">
+            <h2>南京理工大学经济管理学院</h2>
+            <p>
+                南京理工大学经济管理学院是南京理工大学的二级学院。
+            </p>
+    	    <p>
+    	       学院拥有管理科学与工程一级学科博士学位授权点和博士后流动站，应用经济学、管理科学与工程、工商管理、图书情报与档案管理4个一级学科硕士点；拥有高级管理人员工商管理硕士（EMBA）、工商管理硕士（MBA）、会计硕士（MPAcc）、工程管理（MEM）、国际商务、金融硕士、图书情报档案硕士等7个专业硕士学位授权点和金融学、国际经济与贸易学、会计学、工商管理、人力资源管理、信息管理与信息系统等6个本科专业。
+    		</p>
+        </div>
+        <div id="footer">
+            JiangQixuan
+        </div>
+    </body>
+</html>
