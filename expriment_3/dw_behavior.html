@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>行为</title>
+	<style type="text/css">
+		#bt{
+			text-align: center;
+			position: absolute;
+			left: 45%;
+		}
+		#demo{
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+	</style>
+</head>
+<body>
+	<button id="bt" onclick="myFunction()">「点击开始数羊🐑」</button>
+	<br />
+	<br />
+	<p id="demo"></p>
+
+<script type="text/javascript">
+	var sheep = [];
+	var count=0;
+	function myFunction() {
+		count++;
+  		sheep.push("第"+count+"只🐑");
+  		document.getElementById("demo").innerHTML = sheep;
+	}
+</script>
+</body>
+<html>
